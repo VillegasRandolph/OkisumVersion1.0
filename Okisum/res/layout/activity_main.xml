@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:circle="http://schemas.android.com/apk/res/com.okisum.andoyz"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity" >
+
+    <com.okisum.andoyz.view.CircleLayout
+        android:id="@+id/main_circle_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/main_selected_textView"
+        android:layout_gravity="center_horizontal"
+        circle:firstChildPosition="South" 
+        circle:rotateToCenter="true" 
+        circle:isRotating="true"
+        circle:speed="75" >       
+<!--         circle:circleBackground="@drawable/green"  > -->
+
+
+        <com.okisum.andoyz.view.CircleImageView
+            android:id="@+id/main_songlib_image"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/icon_songlib"
+            circle:name="@string/songlib" />
+
+        <com.okisum.andoyz.view.CircleImageView
+            android:id="@+id/main_nowplay_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_nowplay"
+            circle:name="@string/nowplay" />
+
+         <com.okisum.andoyz.view.CircleImageView
+            android:id="@+id/main_chordvar_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_chordvar"
+            circle:name="@string/chordvar" />
+         
+          <com.okisum.andoyz.view.CircleImageView
+            android:id="@+id/main_tips_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_tips"
+            circle:name="@string/tip" />
+         
+
+         <com.okisum.andoyz.view.CircleImageView
+            android:id="@+id/main_credits_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_credits"
+            circle:name="@string/credit" />
+
+       <com.okisum.andoyz.view.CircleImageView
+            android:id="@+id/main_exit_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_exit"
+            circle:name="@string/exitt" />
+
+       
+    </com.okisum.andoyz.view.CircleLayout>
+
+    <TextView
+        android:id="@+id/main_selected_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:text="asd"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#cc93cc" />
+
+</RelativeLayout>
